@@ -48,10 +48,10 @@ function validateEmail() {
 function validatePhone() {
     const phone = document.getElementById('phone');
     // example 
-    // more internation doesn't work with pt numbers
-    // const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
+    // works with all numbers i think
+    const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{3}$/;
     // pt phone numbers i believe
-    const re = /^\(?\d{9}\)?$/;
+    // const re = /^\(?\d{9}\)?$/;
 
 
     if (!re.test(phone.value)) {
